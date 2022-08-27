@@ -1,9 +1,13 @@
 .navbar-container {
     width: 100%;
     height: 100px;
-    background-color: gray;
+    background-color: #ddd;
     display: flex;
     flex-direction: row;
+}
+
+.lista {
+    padding-right: 350px;
 }
 
 ul {
@@ -29,7 +33,8 @@ li {
 }
 
 .botonsi {
-    margin: auto;
+    padding-top: 20px;
+    float: right;
 }
 
 .lista {
