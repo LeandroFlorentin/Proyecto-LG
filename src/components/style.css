@@ -22,6 +22,7 @@ li {
 .imagen {
     width: 100px;
     height: 100px;
+    animation: App-logo-spin infinite 5s linear;
 }
 
 .boton {

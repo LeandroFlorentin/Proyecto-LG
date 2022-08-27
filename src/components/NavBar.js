@@ -1,7 +1,8 @@
 import CartWidget from './CartWidget';
 import logo from '../logo.svg';
 import './style.css';
-const NavBar = () => {
+const NavBar = ({ titulo, children }) => {
+    console.log({ titulo, children })
     return (
         <div className='navbar-container'>
             <div>
