@@ -1,0 +1,15 @@
+.capsulaGlobal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.saludo {
+    width: 100%;
+}
+
+.capsulaItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

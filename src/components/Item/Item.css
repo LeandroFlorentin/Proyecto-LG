@@ -1,0 +1,62 @@
+.contenedorLista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 28%;
+    padding: 40px 20px 30px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.imagenes {
+    width: 350px;
+    height: 350px;
+}
+
+.imagenes:hover {
+    cursor: pointer;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.titulo1 {
+    margin: 0;
+}
+
+.titulo2 {
+    margin: 0;
+}
+
+.espe {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.boton {
+    margin: 15px;
+    width: 250px;
+    height: 40px;
+    background-color: #cc0041;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    transition: all 2s;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: #880021;
+}
