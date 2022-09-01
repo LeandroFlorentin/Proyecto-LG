@@ -57,11 +57,11 @@ const data = [
     {
         "img": "Basic-352.webp",
         "id": 6,
-        "nombre": "LG UHD AI ThinQ 86'' UP80 4K Smart TV, Procesador α7 Gen4 AI, Magic Remote",
+        "nombre": "LG UHD AI ThinQ 86''",
         "codigo": "86UP8050PSB",
         "especificaciones": {
             "panel": "LED 4K UHD",
-            "procesador": "LED 4K UHD",
+            "procesador": "Procesador Inteligente α7 Gen 4 AI",
             "sonido": "LG AI ThinQ: Inteligencia Artificial"
         }
     }
