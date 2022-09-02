@@ -13,11 +13,11 @@ const NavBar = () => {
                 </div>
                 <nav className='nav'>
                     <div className='contenedorSpan'>
-                        <span><a href='#'>TV/AUDIO</a></span>
-                        <span><a href='#'>ELECTRODOMESTICOS</a></span>
-                        <span><a href='#'>INFORMATICA</a></span>
-                        <span><a href='#'>TIENDA</a></span>
-                        <span><a href='#'>SOPORTE</a></span>
+                        <span><strong><a href='#'>ELECTRODOMESTICOS</a></strong></span>
+                        <span><strong><a href='#'>TV/AUDIO</a></strong></span>
+                        <span><strong><a href='#'>INFORMATICA</a></strong></span>
+                        <span><strong><a href='#'>TIENDA</a></strong></span>
+                        <span><strong><a href='#'>SOPORTE</a></strong></span>
                     </div>
                     <div className='divButton'>
                         <CartWidget />

@@ -1,0 +1,74 @@
+.tituloFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+
+.tituloFooter h1 {
+    font-size: 25px;
+}
+
+.tituloFooter p {
+    font-size: 15px;
+    color: #333;
+}
+
+.containerImg {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.containerImg h3 {
+    font-size: 22px;
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.miniContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+}
+
+.miniContainer p {
+    color: #333;
+    font-size: 14px;
+}
+
+.finalPie {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+
+.containSpan {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-right: 300px;
+    font-size: 13px;
+}
+
+.containSpan span {
+    color: #fff;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.containTexto p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.lgImg {
+    border-radius: 5px;
+}

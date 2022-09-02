@@ -8,11 +8,12 @@
 .containerBuscador {
     width: 50%;
     display: flex;
-    background-color: rgb(248, 248, 248);
     align-items: center;
     justify-content: center;
     margin: 10px 10px;
-    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .buscador {
@@ -22,7 +23,7 @@
     border: 1px solid #ddd;
     border-radius: 30px;
     outline: none;
-    text-align: center;
+    text-align: center
 }
 
 .lupa {
@@ -35,6 +36,8 @@
 .capsulaItems {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 75%;
+    justify-content: space-evenly;
+    width: 80%;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
 }

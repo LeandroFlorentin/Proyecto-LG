@@ -10,6 +10,7 @@ const ItemList = ({ itemsList }) => {
                         codigo={producto.codigo}
                         especificaciones={producto.especificaciones}
                         key={producto.id}
+                        precio={producto.precio}
                     />
                 )
             })}

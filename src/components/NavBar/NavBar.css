@@ -39,14 +39,14 @@
 }
 
 .nav span {
-    color: #000;
-    font-size: 15px;
+    color: #222;
+    font-size: 13px;
     padding-right: 20px;
 }
 
 .nav span a {
     text-decoration: none;
-    color: #000;
+    color: rgb(20, 20, 20);
 }
 
 .nav span a:hover {

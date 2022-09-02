@@ -1,6 +1,9 @@
-const data = [
+[
     {
-        "img": "1-TAG-350.webp",
+        "img": {
+            "uno": "1-TAG-350.webp",
+            "dos": "C1-3-180.jpg"
+        },
         "id": 1,
         "nombre": "LG OLED C1 Al ThinQ 4k 77''",
         "codigo": "OLED77C1PSA",
@@ -8,10 +11,14 @@ const data = [
             "panel": "Panel OLED: Auto-Iluminación de Píxeles",
             "procesador": "Procesador α9 Gen4 AI 4K - 4K Cinema HDR con Dolby Vision IQ",
             "sonido": "Sonido Dolby Atmos"
-        }
+        },
+        "precio": "500 usd"
     },
     {
-        "img": "Basic-350.webp",
+        "img": {
+            "uno": "Basic-350.webp",
+            "dos": "S-2.webp"
+        },
         "id": 2,
         "nombre": "LG Smart TV AI FHD 43''",
         "codigo": "43LM6350PSB",
@@ -19,10 +26,14 @@ const data = [
             "panel": "Full HD con Magic Remote",
             "procesador": "Sistema operativo WebOS",
             "sonido": "Optimizador de color dinámico"
-        }
+        },
+        "precio": "600 usd"
     },
     {
-        "img": "350.webp",
+        "img": {
+            "uno": "350.webp",
+            "dos": "435055UP7700-2-180.webp"
+        },
         "id": 3,
         "nombre": "LG UHD AI ThinQ 4K 55''",
         "codigo": "55UP7750PSB",
@@ -30,10 +41,14 @@ const data = [
             "panel": "Panel Led 4K UHD",
             "procesador": "4K Procesador Inteligente α5 4K",
             "sonido": "HDR Activo 4K"
-        }
+        },
+        "precio": "700 usd"
     },
     {
-        "img": "LGUDGHD.webp",
+        "img": {
+            "uno": "LGUDGHD.webp",
+            "dos": "S-04.webp"
+        },
         "id": 4,
         "nombre": "LG UHD LED AI ThinQ 4K 65''",
         "codigo": "65UP7750PSB",
@@ -41,10 +56,14 @@ const data = [
             "panel": "LED 4K UHD",
             "procesador": "Procesador Inteligente α5 4K",
             "sonido": "HDR Activo 4K"
-        }
+        },
+        "precio": "800 usd"
     },
     {
-        "img": "Basic-351.webp",
+        "img": {
+            "uno": "Basic-351.webp",
+            "dos": "350-1.webp"
+        },
         "id": 5,
         "nombre": "LG UHD LED TV 60'' ThinQ™ AI",
         "codigo": "60UN7310PSA",
@@ -52,10 +71,14 @@ const data = [
             "panel": "WebOS Smart TV AI ThinQ",
             "procesador": "4K Ultra HD Active HDR",
             "sonido": "Procesador Quad-core"
-        }
+        },
+        "precio": "900 usd"
     },
     {
-        "img": "Basic-352.webp",
+        "img": {
+            "uno": "Basic-352.webp",
+            "dos": "350-01.jpg"
+        },
         "id": 6,
         "nombre": "LG UHD AI ThinQ 86''",
         "codigo": "86UP8050PSB",
@@ -63,8 +86,7 @@ const data = [
             "panel": "LED 4K UHD",
             "procesador": "Procesador Inteligente α7 Gen 4 AI",
             "sonido": "LG AI ThinQ: Inteligencia Artificial"
-        }
+        },
+        "precio": "1000 usd"
     }
 ]
-
-export default data;

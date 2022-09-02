@@ -1,4 +1,3 @@
-import data from './mock-data'
 import { useState, useEffect } from 'react';
 import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css'
@@ -7,16 +6,15 @@ import lupa from '../../img/cosito/lupa.png'
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
 
-    const getData = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(data);
-        }, 2000)
-    })
     useEffect(() => {
-        getData.then((result) => {
-            setItems(result);
-        })
+        setTimeout(() => {
+            fetch('archivo.json')
+            .then(response => response.json())
+            .then(datos => setItems(datos))
+        }, 2000)
+
     }, [])
+
     return (
         <>
             <div className='capsulaGlobal'>
