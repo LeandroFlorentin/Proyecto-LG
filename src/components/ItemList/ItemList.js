@@ -4,14 +4,16 @@ const ItemList = ({ itemsList }) => {
         <>
             {itemsList.map((producto) => {
                 return (
-                    <Item nombre={producto.nombre}
-                        img={producto.img}
-                        id={producto.id}
-                        codigo={producto.codigo}
-                        especificaciones={producto.especificaciones}
-                        key={producto.id}
-                        precio={producto.precio}
-                    />
+                    <>
+                        <Item nombre={producto.nombre}
+                            img={producto.img}
+                            id={producto.id}
+                            codigo={producto.codigo}
+                            especificaciones={producto.especificaciones}
+                            key={producto.id}
+                            precio={producto.precio}
+                        />
+                    </>
                 )
             })}
         </>

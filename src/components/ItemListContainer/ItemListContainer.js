@@ -9,11 +9,11 @@ const ItemListContainer = () => {
     useEffect(() => {
         setTimeout(() => {
             fetch('archivo.json')
-            .then(response => response.json())
-            .then(datos => setItems(datos))
-        }, 2000)
-
+                .then(response => response.json())
+                .then(datos => setItems(datos))
+        }, 500)
     }, [])
+
 
     return (
         <>

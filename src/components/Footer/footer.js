@@ -44,7 +44,7 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-            <div class='finalPie'>
+            <div className='finalPie'>
                 <div className='containTexto'>
                     <div className='containSpan'>
                         <span>Mapa del Sitio</span>
@@ -57,7 +57,7 @@ const Footer = () => {
                     <p>Esta es la página oficial de LG Electronics. Si desea conectarse a LG Corp. u otras filiales de LG, haga clic</p>
                 </div>
                 <div>
-                    <img src={img_lg} class='lgImg' />
+                    <img src={img_lg} className='lgImg' />
                 </div>
             </div>
         </footer>

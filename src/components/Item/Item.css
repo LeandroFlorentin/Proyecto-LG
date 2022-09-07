@@ -15,7 +15,7 @@
     height: 220px;
 }
 
-.icon {
+.linkImg {
     width: 220px;
     height: 220px;
 }
@@ -71,8 +71,8 @@
     width: 250px;
     height: 40px;
     background-color: #880021;
+    border: none;
     border-radius: 50px;
-    border: 1px solid #bb1152;
     color: #fff;
     transition: all 1.5s;
     box-shadow: 2px 1px #ccc;
@@ -81,26 +81,25 @@
 .boton:hover {
     cursor: pointer;
     background-color: #bb1152;
-    border: 1px solid #880021;
 }
 
-.icon .social1 {
+.linkImg .social1 {
     display: none;
 }
 
-.icon:hover .social2 {
+.linkImg:hover .social2 {
     display: block;
 }
 
-.icon .social2 {
+.linkImg .social2 {
     display: none;
 }
 
-.icon:hover .social1 {
+.linkImg:hover .social1 {
     display: block;
 }
 
-.icon:hover .social {
+.linkImg:hover .social {
     display: none;
 }
 

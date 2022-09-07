@@ -1,111 +1,95 @@
-.contenedorLista {
+.containDetail {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgDetailContain {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 28%;
-    padding: 20px 10px 15px;
+    width: 10%;
+}
+
+.imgDetail {
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
     border: 1px solid #ddd;
-    border-radius: 50px;
-    margin: 10px;
 }
 
-.imagenes {
-    width: 220px;
-    height: 220px;
-}
-
-.icon {
-    width: 220px;
-    height: 220px;
-}
-
-.imagenes:hover {
+.imgDetail:hover {
     cursor: pointer;
 }
 
-.datos {
+.imgBigDetailContain {
+    width: 65%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 500px;
+    margin-top: 20px
 }
 
-.titulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
+.imgBigDetail {
+    width: 700px;
+    height: 450px;
 }
 
-.titulo1 {
-    margin: 0;
-    font-size: 14px;
+.containDetallesDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.nombreCodigoDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombreDetail {
+    width: 100%;
+    margin: auto;
+}
+
+.codigoDetail {
+    color: #666;
+    font-size: 12px;
+}
+
+.ulDetail {
+    font-size: 13px;
     color: #333;
-}
-
-.titulo1:hover {
-    cursor: pointer;
-}
-
-.titulo2 {
-    padding-top: 15px;
-    margin: 0;
-    font-size: 12px;
-    color: #555;
-}
-
-.titulo2 {
-    cursor: pointer;
-}
-
-.espe {
-    margin: 0;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    font-size: 12px;
-    color: #555;
 }
 
-.boton {
-    margin: 15px;
-    width: 250px;
-    height: 40px;
+.liDetail {
+    margin-top: 20px;
+}
+
+.precioContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precioDetail {
+    font-size: 20px;
+}
+
+.botonDetail {
+    height: 45px;
     background-color: #880021;
-    border-radius: 50px;
-    border: 1px solid #bb1152;
+    border: none;
+    border-radius: 5px;
     color: #fff;
-    transition: all 1.5s;
-    box-shadow: 2px 1px #ccc;
+    transition: 1s all;
 }
 
-.boton:hover {
+.botonDetail:hover {
     cursor: pointer;
     background-color: #bb1152;
-    border: 1px solid #880021;
-}
-
-.icon .social1 {
-    display: none;
-}
-
-.icon:hover .social2 {
-    display: block;
-}
-
-.icon .social2 {
-    display: none;
-}
-
-.icon:hover .social1 {
-    display: block;
-}
-
-.icon:hover .social {
-    display: none;
-}
-
-.precio {
-    color: #555;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px;
 }

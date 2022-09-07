@@ -4,10 +4,8 @@ import './ItemDetailContainer.css'
 const ItemDetailContainer = () => {
 
     return (
-        <div className='capsulaGlobal'>
-            <div className='capsulaItems'>
-                <ItemDetail />
-            </div>
+        <div className='capsulaItemsDetail'>
+            <ItemDetail />
         </div>
     )
 }

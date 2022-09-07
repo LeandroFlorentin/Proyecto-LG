@@ -1,15 +1,3 @@
-.capsulaItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 80%;
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-}
-
-.capsulaGlobal {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+.capsulaItemsDetail {
+    width: 100vw;
 }

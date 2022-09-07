@@ -67,6 +67,7 @@
 .containTexto p {
     font-size: 13px;
     color: #ccc;
+    width: 100%;
 }
 
 .lgImg {

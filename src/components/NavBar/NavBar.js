@@ -3,29 +3,28 @@ import logo from '../../img/logo/logo-b2c.jpg';
 import logito from '../../img/cosito/lg-thinkq-logo.svg';
 import logito2 from '../../img/cosito/usuario.png'
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <div className='contenedor'>
-            <img className='img' src={logo} alt='logo' />
+            <Link className='img' to='/'><img src={logo} alt='logo' /></Link>
             <div className='divGlobal'>
                 <div className='divSuperior'>
                     <img className='lg' src={logito} alt='LG' />
                 </div>
                 <nav className='nav'>
                     <div className='contenedorSpan'>
-                        <span><strong><a href='#'>ELECTRODOMESTICOS</a></strong></span>
-                        <span><strong><a href='#'>TV/AUDIO</a></strong></span>
-                        <span><strong><a href='#'>INFORMATICA</a></strong></span>
-                        <span><strong><a href='#'>TIENDA</a></strong></span>
-                        <span><strong><a href='#'>SOPORTE</a></strong></span>
-                    </div>
+                        <Link className='link' to='/' ><span><strong>INICIO</strong></span></Link>
+                        <Link className='link' to='/tienda' ><span><strong>TIENDA</strong></span></Link>
+                        <Link className='link' to='/soporte' ><span><strong>SOPORTE</strong></span></Link >
+                    </div >
                     <div className='divButton'>
                         <CartWidget />
                         <img className='user' src={logito2} alt='USER' />
                     </div>
-                </nav>
-            </div>
-        </div>
+                </nav >
+            </div >
+        </div >
     )
 }
 

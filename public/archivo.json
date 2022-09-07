@@ -2,7 +2,8 @@
     {
         "img": {
             "uno": "1-TAG-350.webp",
-            "dos": "C1-3-180.jpg"
+            "dos": "C1-3-180.jpg",
+            "tres": "C1-3-1802.jpg"
         },
         "id": 1,
         "nombre": "LG OLED C1 Al ThinQ 4k 77''",
@@ -12,12 +13,13 @@
             "procesador": "Procesador α9 Gen4 AI 4K - 4K Cinema HDR con Dolby Vision IQ",
             "sonido": "Sonido Dolby Atmos"
         },
-        "precio": "500 usd"
+        "precio": "86.000"
     },
     {
         "img": {
             "uno": "Basic-350.webp",
-            "dos": "S-2.webp"
+            "dos": "S-2.webp",
+            "tres": "D-1.jpg"
         },
         "id": 2,
         "nombre": "LG Smart TV AI FHD 43''",
@@ -27,12 +29,13 @@
             "procesador": "Sistema operativo WebOS",
             "sonido": "Optimizador de color dinámico"
         },
-        "precio": "600 usd"
+        "precio": "97.500"
     },
     {
         "img": {
             "uno": "350.webp",
-            "dos": "435055UP7700-2-180.webp"
+            "dos": "435055UP7700-2-180.webp",
+            "tres": "1100.jpg"
         },
         "id": 3,
         "nombre": "LG UHD AI ThinQ 4K 55''",
@@ -42,12 +45,13 @@
             "procesador": "4K Procesador Inteligente α5 4K",
             "sonido": "HDR Activo 4K"
         },
-        "precio": "700 usd"
+        "precio": "95.000"
     },
     {
         "img": {
             "uno": "LGUDGHD.webp",
-            "dos": "S-04.webp"
+            "dos": "S-04.webp",
+            "tres": "D-01.jpg"
         },
         "id": 4,
         "nombre": "LG UHD LED AI ThinQ 4K 65''",
@@ -57,12 +61,13 @@
             "procesador": "Procesador Inteligente α5 4K",
             "sonido": "HDR Activo 4K"
         },
-        "precio": "800 usd"
+        "precio": "100.000"
     },
     {
         "img": {
             "uno": "Basic-351.webp",
-            "dos": "350-1.webp"
+            "dos": "350-1.webp",
+            "tres": "D-1-v1.jpg"
         },
         "id": 5,
         "nombre": "LG UHD LED TV 60'' ThinQ™ AI",
@@ -72,12 +77,13 @@
             "procesador": "4K Ultra HD Active HDR",
             "sonido": "Procesador Quad-core"
         },
-        "precio": "900 usd"
+        "precio": "115.000"
     },
     {
         "img": {
             "uno": "Basic-352.webp",
-            "dos": "350-01.jpg"
+            "dos": "350-01.jpg",
+            "tres": "D-1 (1).jpg"
         },
         "id": 6,
         "nombre": "LG UHD AI ThinQ 86''",
@@ -87,6 +93,6 @@
             "procesador": "Procesador Inteligente α7 Gen 4 AI",
             "sonido": "LG AI ThinQ: Inteligencia Artificial"
         },
-        "precio": "1000 usd"
+        "precio": "120.000"
     }
 ]
