@@ -22,19 +22,19 @@ const Inicio = () => {
                 <div className='imgSmallContainer'>
                     <div className='divSmall'>
                         <img className='imgSmall' src={img1} alt='img1' />
-                        <h5>LG OLED C1 Al ThinQ 4k 77''</h5>
+                        <h5 className='titleSmall'>LG OLED C1 Al ThinQ 4k 77''</h5>
                     </div>
                     <div className='divSmall'>
                         <img className='imgSmall' src={img2} alt='img2' />
-                        <h5>LG OLED C1 Al ThinQ 4k 77''</h5>
+                        <h5 className='titleSmall'>LG OLED C1 Al ThinQ 4k 77''</h5>
                     </div>
                     <div className='divSmall'>
                         <img className='imgSmall' src={img3} alt='img3' />
-                        <h5>Television LG UHD LED AI ThinQ 4K 65''</h5>
+                        <h5 className='titleSmall'>Television LG UHD LED AI ThinQ 4K 65''</h5>
                     </div>
                     <div className='divSmall'>
                         <img className='imgSmall' src={img4} alt='img4' />
-                        <h5>LG UHD LED TV 60'' ThinQ™ AI</h5>
+                        <h5 className='titleSmall'>LG UHD LED TV 60'' ThinQ™ AI</h5>
                     </div>
                 </div>
             </div>

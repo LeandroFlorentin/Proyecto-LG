@@ -17,11 +17,12 @@
 .imgSmallContainer {
     display: flex;
     justify-content: space-around;
+    height: 260px;
 }
 
 .imgSmall {
-    height: 250px;
-    width: 250px;
+    height: 160px;
+    width: 160px;
     border-radius: 10px;
 }
 
@@ -33,8 +34,14 @@
     align-items: center;
     border-radius: 10px;
     padding: 10px 20px;
+    width: 20%;
 }
 
 .divSmall:hover {
     cursor: pointer;
+}
+
+.titleSmall {
+    font-size: 14px;
+    color: #666;
 }

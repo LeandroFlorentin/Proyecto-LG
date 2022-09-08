@@ -41,7 +41,9 @@ const ItemDetail = () => {
                 <div className="precioContain">
                     <h4 className='precioDetail'>{precio ? `${precio}$` : "..."}</h4>
                 </div>
-                <button className='botonDetail'>Agregar al carrito</button>
+                <div className="containerBotonDetail">
+                    <button className='botonDetail'>Agregar al carrito</button>
+                </div>
             </div>
         </div >
     )
