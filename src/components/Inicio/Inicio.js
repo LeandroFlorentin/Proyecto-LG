@@ -10,10 +10,10 @@ const Inicio = () => {
     return (
         <div className='containerImgInicio'>
             <div className='imgInicioBig'>
-                <img src={inicio} alt='inicio' />
+                <img className='imgBig' src={inicio} alt='inicio' />
             </div>
             <div className='imgInicioMedium'>
-                <img src={inicioMedium} alt='inicioMedium' />
+                <img className='imgMedium' src={inicioMedium} alt='inicioMedium' />
             </div>
             <div className='containerImgSmallTitle'>
                 <div className='titleSmall'>

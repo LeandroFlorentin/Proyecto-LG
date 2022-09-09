@@ -83,7 +83,8 @@
 .containerBotonDetail {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .botonDetail {
@@ -99,4 +100,11 @@
 .botonDetail:hover {
     cursor: pointer;
     background-color: #bb1152;
+}
+
+.containerCountBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

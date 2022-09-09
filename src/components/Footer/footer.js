@@ -12,19 +12,19 @@ const Footer = () => {
                 <h1>Service y Soporte de LG</h1>
                 <p>Consúltenos sobre configuración de productos, usabilidad y mantenimiento</p>
             </div>
-            <div class='containerImg'>
+            <div className='containerImg'>
                 <div className='miniContainer'>
-                    <img src={chat} className='img' />
+                    <img src={chat} className='img' alt='img' />
                     <h3>POR CHAT ON LINE</h3>
                     <p>De lunes a viernes de 09 a 18hs contacte online a un representante.</p>
                 </div>
                 <div className='miniContainer'>
-                    <img src={mail} className='img' />
+                    <img src={mail} className='img' alt='img' />
                     <h3>POR E-MAIL</h3>
                     <p>Envíe un mensaje a Atención al cliente LG y Soporte Técnico.</p>
                 </div>
                 <div className='miniContainer'>
-                    <img src={tele} className='img' />
+                    <img src={tele} className='img' alt='img' />
                     <h3>POR TELEFONO</h3>
                     <p>Llame a un Representante de LG Soporte Técnico al 0800-888-5454
                         Lunes a Viernes de 8hs a 20hs</p>
@@ -35,7 +35,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className='miniContainer'>
-                    <img src={wpp} className='img' />
+                    <img src={wpp} className='img' alt='img' />
                     <h3>POR WHATSAPP</h3>
                     <p>¡Comunicate fácilmente con nosotros!
                         * Agregá 11 5524 2090 a tus contactos y estarás conectado con el Servicio al Cliente de LG.</p>
@@ -57,7 +57,7 @@ const Footer = () => {
                     <p>Esta es la página oficial de LG Electronics. Si desea conectarse a LG Corp. u otras filiales de LG, haga clic</p>
                 </div>
                 <div>
-                    <img src={img_lg} className='lgImg' />
+                    <img src={img_lg} className='lgImg' alt='imgFooter' />
                 </div>
             </div>
         </footer>

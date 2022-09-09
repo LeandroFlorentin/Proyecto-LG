@@ -1,10 +1,21 @@
 import { useEffect, useState } from "react";
 import './ItemDetail.css'
 import { useParams } from "react-router-dom";
+import Count from '../Count/Count.js';
 
 const ItemDetail = () => {
     const { productId } = useParams();
     const [item, setItems] = useState({})
+    const { id, img, nombre, codigo, especificaciones, precio } = item;
+
+    const [numero, setNumero] = useState(0);
+    const sumaNumero = () => {
+        setNumero((numero) => numero + 1)
+    }
+    const restaNumero = () => {
+        if (numero === 0) return numero;
+        setNumero((numero) => numero - 1)
+    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -17,7 +28,11 @@ const ItemDetail = () => {
         }, 500)
     }, [productId])
 
-    const { id, img, nombre, codigo, especificaciones, precio } = item;
+    const agregado = (e) => {
+        e.preventDefault()
+        if (numero === 0) console.log(`No especifico la cantidad.`)
+        else console.log(`Agregamos ${numero} cantidad del producto ${nombre}`)
+    }
 
     return (
         <div className='containDetail' key={id} >
@@ -42,7 +57,10 @@ const ItemDetail = () => {
                     <h4 className='precioDetail'>{precio ? `${precio}$` : "..."}</h4>
                 </div>
                 <div className="containerBotonDetail">
-                    <button className='botonDetail'>Agregar al carrito</button>
+                    <div className="containerCountBtn">
+                        <Count numero={numero} suma={sumaNumero} resta={restaNumero} />
+                        <button className='botonDetail' onClick={(e) => agregado(e)} >Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </div >

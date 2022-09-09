@@ -1,0 +1,55 @@
+.containerForm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.formSoporte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 50vh;
+    margin-top: 30px;
+    border-left: 1px solid #bb1152;
+    border-right: 1px solid #bb1152;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.divInput {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.textAreaSoporte {
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+.input {
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+.inputSubmit {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background-color: #880021;
+    color: #fff;
+    transition: 1s all;
+}
+
+.inputSubmit:hover {
+    cursor: pointer;
+    background-color: #bb1152;
+}

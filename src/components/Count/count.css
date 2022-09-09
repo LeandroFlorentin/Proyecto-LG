@@ -1,0 +1,39 @@
+.containerGlobalCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 80%;
+}
+
+.containerBtnNum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.botonRS {
+    outline: none;
+    border: none;
+    background-color: #880021;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.botonRS:hover {
+    background-color: #bb1152;
+}
+
+.numeroCount {
+    font-size: 20px;
+}
