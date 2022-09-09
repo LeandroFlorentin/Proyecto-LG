@@ -7,6 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Inicio from './components/Inicio/Inicio.js'
 import Soporte from './components/Soporte/Soporte.js'
+import IniciarSesion from './components/IniciarSesion/IniciarSesion';
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route exact path='/soporte'>
               <Soporte />
+            </Route>
+            <Route exact path='/iniciar'>
+              <IniciarSesion />
             </Route>
           </Switch>
         </header>

@@ -38,26 +38,32 @@ const Soporte = () => {
                     <label>Nombre completo</label>
                     <input
                         className='input'
+                        placeholder='Escribe tu nombre'
                         type='text'
                         name='nombreCompleto'
-                        onChange={(e) => cambioValue(e)} />
+                        onChange={(e) => cambioValue(e)}
+                        value={input.nombreCompleto} />
                 </div>
                 <div className='divInput'>
                     <label>Email</label>
                     <input
                         className='input'
+                        placeholder='Escribe tu email'
                         type='text'
                         name='email'
-                        onChange={(e) => cambioValue(e)} />
+                        onChange={(e) => cambioValue(e)}
+                        input={input.email} />
                 </div>
                 <span hidden={!error.name}>El mail no es valido</span>
                 <div className='divInput'>
                     <label>Problema</label>
                     <textarea
                         className='textAreaSoporte'
+                        placeholder='Escribe tu problema'
                         type='text'
                         name='problema'
-                        onChange={(e) => cambioValue(e)} />
+                        onChange={(e) => cambioValue(e)}
+                        input={input.problema} />
                 </div>
                 <input type='submit' className='inputSubmit' />
             </form>

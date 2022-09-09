@@ -1,0 +1,77 @@
+.containerIniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formIniciar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 60%;
+    border-left: 1px solid #880021;
+    border-right: 1px solid #880021;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.containerRegis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.inputIniciar {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    height: 20px;
+    margin-top: 10px;
+    width: 120%;
+}
+
+.botonIniciar {
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #880021;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.botonIniciar:hover {
+    background-color: #bb1152;
+}
+
+.pIniciar {
+    margin-top: 20px;
+}
+
+.pIniciar a {
+    color: #880021;
+}
+
+.errorEmail {
+    background-color: #bb1152;
+    position: relative;
+    bottom: 40px;
+    left: 21%;
+    color: #fff;
+    width: 110px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

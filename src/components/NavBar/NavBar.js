@@ -20,7 +20,7 @@ const NavBar = () => {
                     </div >
                     <div className='divButton'>
                         <CartWidget />
-                        <img className='user' src={logito2} alt='USER' />
+                        <Link to='/iniciar'><img className='user' src={logito2} alt='USER' /></Link>
                     </div>
                 </nav >
             </div >
