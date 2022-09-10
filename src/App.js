@@ -4,13 +4,13 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer.
 import lg from './img/cosito/icon_lg.png'
 import Footer from './components/Footer/footer.js'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.js'
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import Inicio from './components/Inicio/Inicio.js'
 import Soporte from './components/Soporte/Soporte.js'
 import IniciarSesion from './components/IniciarSesion/IniciarSesion';
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <header className="App-header">
           <link rel='icon' href={lg} />
@@ -35,7 +35,7 @@ function App() {
         </header>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
