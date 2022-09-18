@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60vh;
 }
 
 .formIniciar {
@@ -13,8 +14,10 @@
     width: 60%;
     border-left: 1px solid #880021;
     border-right: 1px solid #880021;
-    border-bottom-left-radius: 200px;
-    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .containerInput {

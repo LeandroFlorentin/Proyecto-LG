@@ -1,9 +1,10 @@
-import CartWidget from '../CartWidget/CartWidget.js';
 import logo from '../../img/logo/logo-b2c.jpg';
 import logito from '../../img/cosito/lg-thinkq-logo.svg';
 import logito2 from '../../img/cosito/usuario.png'
 import './NavBar.css';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import CarritoContainer from '../CarritoContainer/CarritoContainer.js'
+
 const NavBar = () => {
     return (
         <div className='contenedor'>
@@ -14,12 +15,12 @@ const NavBar = () => {
                 </div>
                 <nav className='nav'>
                     <div className='contenedorSpan'>
-                        <Link className='link' to='/' ><span><strong>INICIO</strong></span></Link>
-                        <Link className='link' to='/tienda' ><span><strong>TIENDA</strong></span></Link>
-                        <Link className='link' to='/soporte' ><span><strong>SOPORTE</strong></span></Link >
+                        <NavLink className={(isActive) => isActive ? 'link' : 'linkoff'} exact to='/' ><span><strong>INICIO</strong></span></NavLink>
+                        <NavLink className={(isActive) => isActive ? 'link' : 'linkoff'} to='/tienda' ><span><strong>TIENDA</strong></span></NavLink>
+                        <NavLink className={(isActive) => isActive ? 'link' : 'linkoff'} to='/soporte' ><span><strong>SOPORTE</strong></span></NavLink >
                     </div >
                     <div className='divButton'>
-                        <CartWidget />
+                        <CarritoContainer />
                         <Link to='/iniciar'><img className='user' src={logito2} alt='USER' /></Link>
                     </div>
                 </nav >

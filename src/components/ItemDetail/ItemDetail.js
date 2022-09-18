@@ -1,41 +1,20 @@
-import { useEffect, useState } from "react";
 import './ItemDetail.css'
-import { useParams } from "react-router-dom";
+import { useContext } from 'react';
 import Count from '../Count/Count.js';
+import { CartContext } from '../../context/CartContext';
 
-const ItemDetail = () => {
-    const { productId } = useParams();
-    const [item, setItems] = useState({})
-    const { id, img, nombre, codigo, especificaciones, precio } = item;
-
-    const [numero, setNumero] = useState(0);
-    const sumaNumero = () => {
-        setNumero((numero) => numero + 1)
-    }
-    const restaNumero = () => {
-        if (numero === 0) return numero;
-        setNumero((numero) => numero - 1)
-    }
-
-    useEffect(() => {
-        setTimeout(() => {
-            fetch('/archivo.json')
-                .then(resp => resp.json())
-                .then(datos => {
-                    const producto = datos.find(item => item.id === parseInt(productId))
-                    setItems(producto)
-                })
-        }, 500)
-    }, [productId])
+const ItemDetail = ({ item }) => {
+    const { addItem, restaNumero, sumaNumero, numero, isInCart, updateItem } = useContext(CartContext)
+    const { img, id, nombre, codigo, especificaciones, precio } = item
 
     const agregado = (e) => {
         e.preventDefault()
-        if (numero === 0) console.log(`No especifico la cantidad.`)
-        else console.log(`Agregamos ${numero} cantidad del producto ${nombre}`)
+        if (isInCart(item.id)) updateItem(item, numero)
+        else addItem(item, numero)
     }
 
     return (
-        <div className='containDetail' key={id} >
+        <div className='containDetail' key={id}  >
             <div className="imgDetailContain">
                 <img className='imgDetail' src={img ? require(`../../img/stock/${img?.uno}`) : ""} alt='Television' />
                 <img className='imgDetail' src={img ? require(`../../img/stock/${img?.dos}`) : ""} alt='Television' />

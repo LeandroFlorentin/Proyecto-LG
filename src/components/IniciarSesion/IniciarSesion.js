@@ -15,12 +15,11 @@ const IniciarSesion = () => {
             ...input,
             [e.target.name]: e.target.value
         })
-        /*         console.log(e.target.value)
-                console.log(input.email) */
-        //console.log(input.email.length + 1)
         let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-        if (expReg.test(e.target.value)) setErros({ ...errors, error: false })
-        else setErros({ ...errors, error: true })
+        if (e.target.name === "email") {
+            if (expReg.test(e.target.value)) setErros({ ...errors, error: false })
+            else setErros({ ...errors, error: true })
+        }
     }
 
     const submit = (e) => {

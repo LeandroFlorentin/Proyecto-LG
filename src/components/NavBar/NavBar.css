@@ -46,12 +46,16 @@
     text-decoration: none;
 }
 
-.nav span:hover {
-    color: #d21;
+.linkoff {
+    text-decoration: none;
 }
 
 .link {
     text-decoration: none;
+}
+
+.link span {
+    color: #d21;
 }
 
 .img {

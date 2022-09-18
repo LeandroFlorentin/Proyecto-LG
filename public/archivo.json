@@ -13,7 +13,7 @@
             "procesador": "Procesador α9 Gen4 AI 4K - 4K Cinema HDR con Dolby Vision IQ",
             "sonido": "Sonido Dolby Atmos"
         },
-        "precio": "86.000"
+        "precio": "86000"
     },
     {
         "img": {
@@ -29,7 +29,7 @@
             "procesador": "Sistema operativo WebOS",
             "sonido": "Optimizador de color dinámico"
         },
-        "precio": "97.500"
+        "precio": "97500"
     },
     {
         "img": {
@@ -45,7 +45,7 @@
             "procesador": "4K Procesador Inteligente α5 4K",
             "sonido": "HDR Activo 4K"
         },
-        "precio": "95.000"
+        "precio": "95000"
     },
     {
         "img": {
@@ -61,7 +61,7 @@
             "procesador": "Procesador Inteligente α5 4K",
             "sonido": "HDR Activo 4K"
         },
-        "precio": "100.000"
+        "precio": "100000"
     },
     {
         "img": {
@@ -77,7 +77,7 @@
             "procesador": "4K Ultra HD Active HDR",
             "sonido": "Procesador Quad-core"
         },
-        "precio": "115.000"
+        "precio": "115000"
     },
     {
         "img": {
@@ -93,6 +93,6 @@
             "procesador": "Procesador Inteligente α7 Gen 4 AI",
             "sonido": "LG AI ThinQ: Inteligencia Artificial"
         },
-        "precio": "120.000"
+        "precio": "120000"
     }
 ]
