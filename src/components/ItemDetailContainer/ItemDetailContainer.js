@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 const ItemDetailContainer = () => {
     const { productId } = useParams();
     const [item, setItems] = useState({})
+    const [loading, setLoading] = useState(true)
     useEffect(() => {
         setTimeout(() => {
             fetch('/archivo.json')
@@ -13,13 +14,14 @@ const ItemDetailContainer = () => {
                 .then(datos => {
                     const producto = datos.find(item => item.id === parseInt(productId))
                     setItems(producto)
+                    setLoading(false)
                 })
         }, 500)
     }, [productId])
 
     return (
         <div className='capsulaItemsDetail'>
-            <ItemDetail item={item} />
+            <ItemDetail item={item} loading={loading} />
         </div>
     )
 }

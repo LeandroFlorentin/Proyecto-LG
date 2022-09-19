@@ -1,8 +1,8 @@
 import Item from '../Item/Item.js'
-const ItemList = ({ itemsList }) => {
+const ItemList = ({ items }) => {
     return (
         <>
-            {itemsList.map((producto) => {
+            {items.map((producto) => {
                 return (
                     <>
                         <Item nombre={producto.nombre}
