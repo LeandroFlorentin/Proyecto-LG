@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import db from '../utils/firebase.js'
+import { collection, getDocs } from 'firebase/firestore'
 
 export const CartContext = React.createContext();
 
@@ -55,7 +57,20 @@ export const CartProvider = ({ children }) => {
         };
         newProductCartList.push(newProduct);
         setProductCartList(newProductCartList);
-    };
+    }
+
+    const getData = async () => {
+        const query = collection(db, "items")
+        const response = await getDocs(query)
+        const array = response.docs.map(doc => {
+            const newProduct = {
+                ...doc.data(),
+                id: doc.id
+            }
+            return newProduct
+        });
+        return array
+    }
 
     return (
         <CartContext.Provider value={{
@@ -68,6 +83,7 @@ export const CartProvider = ({ children }) => {
             clearCarrito,
             isInCart,
             updateItem,
+            getData
         }}>
             {children}
         </CartContext.Provider>

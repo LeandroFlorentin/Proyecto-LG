@@ -2,6 +2,7 @@ import './Carrito.css'
 import carrito from '../../img/carrito-de-compras.png';
 
 const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem, clearCarrito }) => {
+    console.log(productCartList)
     let precioDeTodo = 0;
     let precioTotal2 = (productCartList) => {
         productCartList.forEach(producto => {
@@ -22,7 +23,7 @@ const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem,
                                     productCartList.map(produc => {
                                         return (
                                             <div className='containerProduCarrito'>
-                                                <img className='imgCarrito' src={require(`../../img/stock/${produc.img.uno}`)} alt='imgCarrito' />
+                                                <img className='imgCarrito' src={produc.uno} alt='imgCarrito' />
                                                 <h4>{produc.nombre}</h4>
                                                 <h4>Cantidad: {produc.cantidad}</h4>
                                                 <h4>{produc.precio * produc.cantidad}$</h4>

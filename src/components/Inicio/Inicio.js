@@ -7,6 +7,7 @@ import img4 from '../../img/stock/Basic-351.webp'
 import './Inicio.css'
 
 const Inicio = () => {
+
     return (
         <div className='containerImgInicio'>
             <div className='imgInicioBig'>

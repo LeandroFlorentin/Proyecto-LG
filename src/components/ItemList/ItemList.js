@@ -6,10 +6,14 @@ const ItemList = ({ items }) => {
                 return (
                     <>
                         <Item nombre={producto.nombre}
-                            img={producto.img}
+                            uno={producto.uno}
+                            dos={producto.dos}
+                            tres={producto.tres}
                             id={producto.id}
                             codigo={producto.codigo}
-                            especificaciones={producto.especificaciones}
+                            panel={producto.panel}
+                            procesador={producto.procesador}
+                            sonido={producto.sonido}
                             key={producto.id}
                             precio={producto.precio}
                         />

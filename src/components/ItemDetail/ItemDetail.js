@@ -5,8 +5,9 @@ import { CartContext } from '../../context/CartContext';
 import Cargando from '../Cargando/Cargando.js'
 
 const ItemDetail = ({ item, loading }) => {
+    console.log(item)
     const { addItem, restaNumero, sumaNumero, numero, isInCart, updateItem } = useContext(CartContext)
-    const { img, id, nombre, codigo, especificaciones, precio } = item
+    const { nombre, codigo, precio, id, uno, dos, panel, sonido, procesador, tres } = item
 
     const agregado = (e) => {
         e.preventDefault()
@@ -25,24 +26,24 @@ const ItemDetail = ({ item, loading }) => {
                     :
                     <div className='containDetail' key={id}>
                         < div className="imgDetailContain" >
-                            <img className='imgDetail' src={img ? require(`../../img/stock/${img?.uno}`) : ""} alt='Television' />
-                            <img className='imgDetail' src={img ? require(`../../img/stock/${img?.dos}`) : ""} alt='Television' />
+                            <img className='imgDetail' src={uno} alt='Television' />
+                            <img className='imgDetail' src={dos} alt='Television' />
                         </div >
                         <div className="imgBigDetailContain">
-                            <img className='imgBigDetail' src={img ? require(`../../img/stock/${img?.tres}`) : ""} alt='Television' />
+                            <img className='imgBigDetail' src={tres} alt='Television' />
                         </div>
                         <div className='containDetallesDetail'>
                             <div className='nombreCodigoDetail'>
-                                <h2 className='codigoDetail'>{codigo ? codigo : "..."}</h2>
-                                <h2 className='nombreDetail'>{nombre ? nombre : "..."}</h2>
+                                <h2 className='codigoDetail'>{codigo}</h2>
+                                <h2 className='nombreDetail'>{nombre}</h2>
                             </div>
                             <ul className="ulDetail">
-                                <li className='liDetail'>{especificaciones ? especificaciones?.panel : "..."}</li>
-                                <li className='liDetail'>{especificaciones ? especificaciones?.procesador : "..."}</li>
-                                <li className='liDetail'>{especificaciones ? especificaciones?.sonido : "..."}</li>
+                                <li className='liDetail'>{panel}</li>
+                                <li className='liDetail'>{procesador}</li>
+                                <li className='liDetail'>{sonido}</li>
                             </ul>
                             <div className="precioContain">
-                                <h4 className='precioDetail'>{precio ? `${precio}$` : "..."}</h4>
+                                <h4 className='precioDetail'>{precio}</h4>
                             </div>
                             <div className="containerBotonDetail">
                                 <div className="containerCountBtn">
