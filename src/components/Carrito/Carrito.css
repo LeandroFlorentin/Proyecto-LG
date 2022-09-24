@@ -101,3 +101,10 @@
 .buttonClear:hover {
     background-color: #bb1152;
 }
+
+.containerPyB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

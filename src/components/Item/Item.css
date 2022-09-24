@@ -74,13 +74,14 @@
     border: none;
     border-radius: 50px;
     color: #fff;
-    transition: all 1.5s;
+    transition: background-color 1s, border-radius 250ms;
     box-shadow: 2px 1px #ccc;
 }
 
 .boton:hover {
     cursor: pointer;
     background-color: #bb1152;
+    border-radius: 5px;
 }
 
 .linkImg .social1 {

@@ -91,15 +91,16 @@
     height: 45px;
     background-color: #880021;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     color: #fff;
     width: 300px;
-    transition: 1s all;
+    transition: background-color 1s, border-radius 250ms;
 }
 
 .botonDetail:hover {
     cursor: pointer;
     background-color: #bb1152;
+    border-radius: 5px;
 }
 
 .containerCountBtn {

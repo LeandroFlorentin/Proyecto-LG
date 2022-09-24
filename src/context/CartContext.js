@@ -17,11 +17,12 @@ export const CartProvider = ({ children }) => {
 
     const [productCartList, setProductCartList] = useState([])
 
+
     const addItem = (item, cantidad) => {
         if (cantidad < 1) return { ...item }
         const newProduct = {
             ...item,
-            cantidad
+            cantidad: cantidad
         }
         const newArray = [...productCartList];
         newArray.push(newProduct);
@@ -66,7 +67,7 @@ export const CartProvider = ({ children }) => {
             removeItem,
             clearCarrito,
             isInCart,
-            updateItem
+            updateItem,
         }}>
             {children}
         </CartContext.Provider>

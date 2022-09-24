@@ -2,6 +2,13 @@ import './Carrito.css'
 import carrito from '../../img/carrito-de-compras.png';
 
 const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem, clearCarrito }) => {
+    let precioDeTodo = 0;
+    let precioTotal2 = (productCartList) => {
+        productCartList.forEach(producto => {
+            precioDeTodo += producto.precio * producto.cantidad
+        })
+        return precioDeTodo;
+    }
     return (
         <div>
             <img className='carrito' onClick={showModal} src={carrito} alt='carrito' />
@@ -28,7 +35,10 @@ const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem,
                                         <h3>No agrego ningun producto al carrito.</h3>
                                     </div>
                             }
-                            <button className='buttonClear' onClick={clearCarrito}>Vaciar carrito</button>
+                            <div className='containerPyB'>
+                                <h3 className='precioTotal'>Precio total: {precioTotal2(productCartList)}</h3>
+                                <button className='buttonClear' onClick={clearCarrito}>Vaciar carrito</button>
+                            </div>
                         </div>
                     </div>
                     :
