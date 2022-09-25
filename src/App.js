@@ -11,6 +11,8 @@ import IniciarSesion from './components/IniciarSesion/IniciarSesion';
 import { CartProvider } from './context/CartContext.js'
 
 function App() {
+  let televisor = 'televisor';
+  let notebook = 'notebook'
   return (
     <CartProvider>
       <BrowserRouter>
@@ -24,6 +26,12 @@ function App() {
               </Route>
               <Route exact path='/tienda'>
                 <ItemListContainer />
+              </Route>
+              <Route exact path='/tienda/television'>
+                <h1>{televisor}</h1>
+              </Route>
+              <Route exact path='/tienda/notebook'>
+                <h1>{notebook}</h1>
               </Route>
               <Route exact path='/item/:productId'>
                 <ItemDetailContainer />

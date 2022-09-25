@@ -56,7 +56,7 @@ const IniciarSesion = () => {
                 <div className='containerRegis'>
                     <button className='botonIniciar'>Iniciar sesion</button>
                     <p className='pIniciar'><a href='https://www.facebook.com/'>Registrate</a></p>
-                    <p className='pIniciar'><a href='https://www.facebook.com/'>Has olvidados tu contraseña?</a></p>
+                    <p className='pIniciar'><a href='https://www.facebook.com/'>Has olvidado tu contraseña?</a></p>
                 </div>
             </form>
         </div>

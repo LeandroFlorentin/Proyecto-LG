@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import db from '../utils/firebase.js'
-import { collection, getDocs } from 'firebase/firestore'
+import { collection, getDocs, query, where } from 'firebase/firestore'
 
 export const CartContext = React.createContext();
 
@@ -59,17 +59,31 @@ export const CartProvider = ({ children }) => {
         setProductCartList(newProductCartList);
     }
 
-    const getData = async () => {
-        const query = collection(db, "items")
-        const response = await getDocs(query)
-        const array = response.docs.map(doc => {
-            const newProduct = {
-                ...doc.data(),
-                id: doc.id
-            }
-            return newProduct
-        });
-        return array
+    const getData = async (ele) => {
+        if (ele) {
+            const queryRef = query(collection(db, 'items'), where('modelo', '==', ele))
+            const response = await getDocs(queryRef)
+            const productos = response.docs.map(doc => {
+                const newProduct = {
+                    ...doc.data(),
+                    id: doc.id
+                }
+                return newProduct
+            });
+            return productos
+        }
+        else {
+            const query = collection(db, "items")
+            const response = await getDocs(query)
+            const array = response.docs.map(doc => {
+                const newProduct = {
+                    ...doc.data(),
+                    id: doc.id
+                }
+                return newProduct
+            });
+            return array
+        }
     }
 
     return (

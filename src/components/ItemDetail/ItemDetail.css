@@ -90,8 +90,8 @@
 .botonDetail {
     height: 45px;
     background-color: #880021;
-    border: none;
     border-radius: 50px;
+    border: none;
     color: #fff;
     width: 300px;
     transition: background-color 1s, border-radius 250ms;

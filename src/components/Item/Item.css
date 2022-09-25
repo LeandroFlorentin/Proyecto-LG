@@ -76,10 +76,10 @@
     color: #fff;
     transition: background-color 1s, border-radius 250ms;
     box-shadow: 2px 1px #ccc;
+    cursor: pointer;
 }
 
 .boton:hover {
-    cursor: pointer;
     background-color: #bb1152;
     border-radius: 5px;
 }
@@ -105,7 +105,7 @@
 }
 
 .precio {
-    color: #555;
+    color: #000;
     border-bottom: 1px solid #ddd;
     font-size: 16px;
 }
