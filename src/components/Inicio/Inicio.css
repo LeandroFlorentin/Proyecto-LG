@@ -1,17 +1,129 @@
-.imgInicioBig {
-    margin-top: 10px;
+.containerImgInicio {
+    height: auto;
 }
 
-.imgBig {
-    width: 100%;
+#carrusel-caja {
+    -moz-animation: automatizacion 20s infinite linear;
+    -o-animation: automatizacion 20s infinite linear;
+    -webkit-animation: automatizacion 20s infinite linear;
+    animation: automatizacion 20s infinite linear;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: auto;
+    width: 300%;
 }
 
-.imgInicioMedium {
-    margin-top: 60px;
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+.imagenes {
+    height: auto;
+    width: 100vw;
+}
+
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
 }
 
 .imgMedium {
-    width: 100%;
+    width: 100vw;
 }
 
 .titleSmall {
@@ -34,15 +146,24 @@
     border-radius: 10px;
 }
 
-.divSmall {
-    display: flex;
+.linkSmall {
     border: 1px solid #ddd;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     padding: 10px 20px;
     width: 20%;
+    text-decoration: none;
+    transition: 250ms all;
+}
+
+.linkSmall:hover {
+    box-shadow: 1px 2px 0px #aaa;
+}
+
+.divSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .divSmall:hover {

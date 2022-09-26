@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from 'react';
-import { useParams } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css'
@@ -7,8 +6,6 @@ import lupa from '../../img/cosito/lupa.png'
 import Cargando from '../Cargando/Cargando.js'
 
 const ItemListContainer = () => {
-    const { tienda } = useParams
-    console.log(tienda)
     const [filtro, setFiltro] = useState('')
     const [loading, setLoading] = useState(true)
     const [items, setItems] = useState([]);
