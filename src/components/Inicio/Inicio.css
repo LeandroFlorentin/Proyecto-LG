@@ -193,7 +193,7 @@
 
 @media (max-width:425px) {
     .imgSmallContainer {
-        height: 180vh;
+        height: 500px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -207,5 +207,9 @@
 @media (max-width: 320px) {
     .linkSmall {
         width: 50%;
+    }
+
+    .imgSmallContainer {
+        height: 1000px;
     }
 }
