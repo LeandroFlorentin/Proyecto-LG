@@ -22,13 +22,13 @@ const Inicio = () => {
             <div id="carrusel-contenido">
                 <div id="carrusel-caja">
                     <div class="carrusel-elemento">
-                        <img class="imagenes" src={inicio} alt='img' />
+                        <img class="imagenesCarro" src={inicio} alt='img' />
                     </div>
                     <div class="carrusel-elemento">
-                        <img class="imagenes" src={inicio3} alt='img' />
+                        <img class="imagenesCarro" src={inicio3} alt='img' />
                     </div>
                     <div class="carrusel-elemento">
-                        <img class="imagenes" src={inicio4} alt='img' />
+                        <img class="imagenesCarro" src={inicio4} alt='img' />
                     </div>
                 </div>
                 <div className='imgInicioMedium'>
