@@ -56,7 +56,7 @@ const Footer = () => {
                     <p>Copyright © 2009-2022 LG Electronics. Todos los derechos reservados</p>
                     <p>Esta es la página oficial de LG Electronics. Si desea conectarse a LG Corp. u otras filiales de LG, haga clic</p>
                 </div>
-                <div>
+                <div className='containerLgImg'>
                     <img src={img_lg} className='lgImg' alt='imgFooter' />
                 </div>
             </div>

@@ -156,3 +156,12 @@
 .pOrder {
     font-size: 12px;
 }
+
+@media(max-width:320px) {
+
+    .containerImgCant {
+        position: absolute;
+        top: 45px;
+        left: 75%;
+    }
+}

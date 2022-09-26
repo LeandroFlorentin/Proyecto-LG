@@ -73,3 +73,71 @@
 .lgImg {
     border-radius: 5px;
 }
+
+@media (max-width: 1024px) {
+    .containSpan {
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containSpan {
+        padding-right: 10px;
+    }
+
+    .containerLgImg {
+        margin-left: 30px;
+        width: 100vw;
+        float: left;
+    }
+
+    .finalPie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 425px) {
+    .containSpan {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0px;
+    }
+
+    .containSpan span {
+        padding: 10px 5px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    .finalPie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .containerImg {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .miniContainer {
+        width: 100vw;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .miniContainer img {
+        position: absolute;
+        left: 0px;
+    }
+
+    .miniContainer p {
+        width: 80vw;
+    }
+
+    .containerLgImg {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}

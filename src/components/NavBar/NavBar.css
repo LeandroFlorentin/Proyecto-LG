@@ -84,3 +84,46 @@
 .user:hover {
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .img {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .img {
+        margin-left: 10px;
+    }
+
+    .divButton {
+        width: 20%;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .user {
+        margin-left: 80px;
+    }
+
+    .nav {
+        width: 70%;
+    }
+
+    .contenedorSpan {
+        width: 70%;
+    }
+
+    .contenedorSpan strong {
+        font-size: 8px;
+    }
+
+    .img {
+        margin-left: 0px;
+    }
+
+    .divButton {
+        width: 0px;
+    }
+}
