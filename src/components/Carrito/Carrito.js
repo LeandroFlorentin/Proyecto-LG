@@ -29,7 +29,10 @@ const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem,
 
     return (
         <div>
-            <img className='carrito' onClick={showModal} src={carrito} alt='carrito' />
+            <div className='containerImgCant'>
+                <p><strong>{productCartList.length}</strong></p>
+                <img className='carrito' onClick={showModal} src={carrito} alt='carrito' />
+            </div>
             {
                 openModal ?
                     <div className="backgroundModal" onClick={showModal}>
