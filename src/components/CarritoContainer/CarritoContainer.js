@@ -3,7 +3,7 @@ import { CartContext } from '../../context/CartContext';
 import Carrito from "../Carrito/Carrito.js";
 
 const CarritoContainer = () => {
-    const { productCartList, removeItem, clearCarrito } = useContext(CartContext)
+    const { productCartList, removeItem, clearCarrito, precioTotal } = useContext(CartContext)
     const [openModal, setOpenModal] = useState(false)
     const showModal = () => {
         setOpenModal(!openModal)
@@ -20,6 +20,7 @@ const CarritoContainer = () => {
             productCartList={productCartList}
             removeItem={removeItem}
             clearCarrito={clearCarrito}
+            precioTotal={precioTotal}
         />
     )
 }

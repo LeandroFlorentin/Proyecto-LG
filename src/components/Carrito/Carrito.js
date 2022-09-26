@@ -1,15 +1,32 @@
 import './Carrito.css'
 import carrito from '../../img/carrito-de-compras.png';
+import db from '../../utils/firebase.js'
+import { collection, addDoc } from 'firebase/firestore'
+import { useState } from 'react';
 
-const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem, clearCarrito }) => {
-    console.log(productCartList)
-    let precioDeTodo = 0;
-    let precioTotal2 = (productCartList) => {
-        productCartList.forEach(producto => {
-            precioDeTodo += producto.precio * producto.cantidad
+const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem, clearCarrito, precioTotal }) => {
+
+    const [idOrder, setIdOrder] = useState('');
+
+    const enviar = (e) => {
+        e.preventDefault()
+
+        const order = {
+            buyer: {
+                name: e.target[0].value,
+                phone: e.target[1].value,
+                email: e.target[2].value
+            },
+            items: productCartList,
+            date: new Date(),
+            total: precioTotal(productCartList)
+        }
+        const queryRef = collection(db, 'orders')
+        addDoc(queryRef, order).then(response => {
+            setIdOrder(response.id)
         })
-        return precioDeTodo;
     }
+
     return (
         <div>
             <img className='carrito' onClick={showModal} src={carrito} alt='carrito' />
@@ -37,8 +54,43 @@ const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem,
                                     </div>
                             }
                             <div className='containerPyB'>
-                                <h3 className='precioTotal'>Precio total: {precioTotal2(productCartList)}</h3>
+                                <h3 className='precioTotal'>Precio total: {precioTotal(productCartList)}</h3>
                                 <button className='buttonClear' onClick={clearCarrito}>Vaciar carrito</button>
+                                <div className='containerGlobalForm'>
+                                    <form onSubmit={(e) => enviar(e)} className='containerForm'>
+                                        <div className='containerLabInp'>
+                                            <label>Nombre</label>
+                                            <input
+                                                type='text'
+                                                placeholder='Nombre'
+                                                name='name'
+                                            />
+                                        </div>
+                                        <div className='containerLabInp'>
+                                            <label>Email</label>
+                                            <input
+                                                type='text'
+                                                placeholder='Email'
+                                                name='email'
+                                            />
+                                        </div>
+                                        <div className='containerLabInp'>
+                                            <label>Telefono</label>
+                                            <input
+                                                type='text'
+                                                name='phone'
+                                                placeholder='Telefono'
+                                            />
+                                        </div>
+                                        <button className='btnCarrito' type='submit'>Hacer compra</button>
+                                    </form>
+                                </div>
+                                {idOrder && productCartList.lengt < 1 ?
+                                    <>
+                                        <p className='pOrder'><strong>{`Su orden fue creada con exito. ID : ${idOrder}`}</strong></p>
+                                    </>
+                                    : <p className='pOrder'><strong>Debe ingresar productos para poder realizar una compra</strong></p>
+                                }
                             </div>
                         </div>
                     </div>

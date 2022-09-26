@@ -1,19 +1,35 @@
 import './ItemDetail.css'
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import Count from '../Count/Count.js';
 import { CartContext } from '../../context/CartContext';
 import Cargando from '../Cargando/Cargando.js'
 
 const ItemDetail = ({ item, loading }) => {
-    console.log(item)
-    const { addItem, restaNumero, sumaNumero, numero, isInCart, updateItem } = useContext(CartContext)
+    const { addItem, isInCart, updateItem, precioTotal, productCartList } = useContext(CartContext)
     const { nombre, codigo, precio, id, uno, dos, panel, sonido, procesador, tres } = item
+
+    const [numero, setNumero] = useState(0);
+
+    const sumaNumero = () => {
+        setNumero((numero) => numero + 1)
+    }
+
+    const restaNumero = () => {
+        if (numero === 0) return numero;
+        setNumero((numero) => numero - 1)
+    }
 
     const agregado = (e) => {
         e.preventDefault()
         if (numero < 1) console.log("la cantidad debe ser mayor a 0")
-        else if (isInCart(item.id)) updateItem(item, numero)
-        else addItem(item, numero)
+        else if (isInCart(item.id)) {
+            updateItem(item, numero)
+            precioTotal(productCartList)
+        }
+        else {
+            addItem(item, numero)
+            precioTotal(productCartList)
+        }
     }
 
     return (
@@ -47,7 +63,7 @@ const ItemDetail = ({ item, loading }) => {
                             </div>
                             <div className="containerBotonDetail">
                                 <div className="containerCountBtn">
-                                    <Count numero={numero} suma={sumaNumero} resta={restaNumero} />
+                                    <Count numero={numero} sumaNumero={sumaNumero} restaNumero={restaNumero} />
                                     <button className='botonDetail' onClick={(e) => agregado(e)} >Agregar al carrito</button>
                                 </div>
                             </div>

@@ -6,15 +6,13 @@ export const CartContext = React.createContext();
 
 export const CartProvider = ({ children }) => {
 
-    const [numero, setNumero] = useState(0);
-
-    const sumaNumero = () => {
-        setNumero((numero) => numero + 1)
-    }
-
-    const restaNumero = () => {
-        if (numero === 0) return numero;
-        setNumero((numero) => numero - 1)
+    const precioTotal = (productCartList) => {
+        let precioTotally = 0;
+        for (let i = 0; i < productCartList.length; i++) {
+            console.log(typeof productCartList[i].cantidad)
+            precioTotally += productCartList[i].precio * productCartList[i].cantidad;
+        }
+        return precioTotally;
     }
 
     const [productCartList, setProductCartList] = useState([])
@@ -38,9 +36,7 @@ export const CartProvider = ({ children }) => {
     }
 
     const clearCarrito = () => {
-        setProductCartList(
-            []
-        )
+        setProductCartList([])
     }
 
     const isInCart = (id) => {
@@ -90,14 +86,12 @@ export const CartProvider = ({ children }) => {
         <CartContext.Provider value={{
             productCartList,
             addItem,
-            sumaNumero,
-            restaNumero,
-            numero,
             removeItem,
             clearCarrito,
             isInCart,
             updateItem,
-            getData
+            getData,
+            precioTotal
         }}>
             {children}
         </CartContext.Provider>

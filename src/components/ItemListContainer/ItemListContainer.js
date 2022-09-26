@@ -21,8 +21,6 @@ const ItemListContainer = () => {
             })
     }, [filtro])
 
-    console.log(filtro)
-
     const cambiar = (descrip) => {
         setFiltro(descrip)
     }
