@@ -85,11 +85,11 @@ const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem,
                                         <button className='btnCarrito' type='submit'>Hacer compra</button>
                                     </form>
                                 </div>
-                                {idOrder && productCartList.lengt < 1 ?
+                                {idOrder ?
                                     <>
                                         <p className='pOrder'><strong>{`Su orden fue creada con exito. ID : ${idOrder}`}</strong></p>
                                     </>
-                                    : <p className='pOrder'><strong>Debe ingresar productos para poder realizar una compra</strong></p>
+                                    : null
                                 }
                             </div>
                         </div>
