@@ -81,12 +81,12 @@
 
 @media (max-width:425px) {
     .containerIniciar {
-        height: 70vh;
+        height: 40vh;
     }
 
     .formIniciar {
         width: 80%;
-        height: 65vh;
+        height: 35vh;
     }
 
     .containerRegis {
