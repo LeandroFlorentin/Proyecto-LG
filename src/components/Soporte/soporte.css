@@ -53,3 +53,23 @@
     cursor: pointer;
     background-color: #bb1152;
 }
+
+@media (max-width:768px) {
+    .formSoporte {
+        width: 80%;
+    }
+}
+
+@media (max-width:425px) {
+    .formSoporte {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+@media (max-width:320px) {
+    .formSoporte {
+        width: 95%;
+        height: 300px;
+    }
+}

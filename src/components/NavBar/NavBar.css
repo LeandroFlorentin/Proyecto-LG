@@ -105,6 +105,8 @@
 
     .user {
         margin-left: 80px;
+        height: 15px;
+        width: 15px;
     }
 
     .nav {

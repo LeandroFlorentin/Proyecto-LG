@@ -95,6 +95,12 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .containerLgImg {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 425px) {
@@ -133,11 +139,5 @@
 
     .miniContainer p {
         width: 80vw;
-    }
-
-    .containerLgImg {
-        margin: 0px;
-        display: flex;
-        justify-content: center;
     }
 }

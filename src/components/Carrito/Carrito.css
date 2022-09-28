@@ -164,4 +164,18 @@
         top: 45px;
         left: 75%;
     }
+
+    .containerImgCant {
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .containerImgCant p {
+        font-size: 10px;
+    }
+
+    .carrito {
+        width: 15px;
+        height: 15px;
+    }
 }
