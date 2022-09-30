@@ -5,7 +5,7 @@ const Item = ({ nombre, codigo, precio, id, uno, dos, panel, sonido, procesador 
     return (
         <>
             {
-                < div className="contenedorLista" >
+                < div className="contenedorLista" key={id} >
                     <Link className='linkImg' to={`/item/${id}`}>
                         <img className='imagenes social' src={uno} alt='Television' />
                         <img className='imagenes social1' src={dos} alt='Television' />

@@ -80,3 +80,47 @@
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
 }
+
+@media(max-width:768px) {
+
+    .containerBuscador {
+        width: 70%;
+    }
+
+    .containerItemEspe {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .containerEspe {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 90vw;
+    }
+
+    .capsulaItems {
+        width: 100vw;
+    }
+}
+
+@media(max-width:425px) {
+    .containerBuscador {
+        width: 90%;
+    }
+
+    .containerEspe h3 {
+        font-size: 14px;
+    }
+
+    .containerEspe p {
+        font-size: 10px;
+    }
+
+    .containerEspe button {
+        width: 20%;
+        font-size: 10px;
+    }
+}
