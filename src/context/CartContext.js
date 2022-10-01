@@ -5,6 +5,7 @@ import { collection, getDocs, query, where } from 'firebase/firestore'
 export const CartContext = React.createContext();
 
 export const CartProvider = ({ children }) => {
+    const Swal = require('sweetalert2')
 
     const precioTotal = (productCartList) => {
         let precioTotally = 0;
@@ -30,13 +31,43 @@ export const CartProvider = ({ children }) => {
     }
 
     const removeItem = (id) => {
-        setProductCartList(
-            productCartList.filter(produc => produc.id !== id)
-        )
+        setProductCartList(productCartList.filter(produc => produc.id !== id))
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-start',
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            icon: 'error',
+            title: 'Producto eliminado correctamente'
+        })
     }
 
     const clearCarrito = () => {
         setProductCartList([])
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-start',
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            icon: 'error',
+            title: 'Carrito vaciado con exito'
+        })
     }
 
     const isInCart = (id) => {

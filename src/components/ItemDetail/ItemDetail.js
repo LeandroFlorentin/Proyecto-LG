@@ -5,6 +5,7 @@ import { CartContext } from '../../context/CartContext';
 import Cargando from '../Cargando/Cargando.js'
 
 const ItemDetail = ({ item, loading }) => {
+    const Swal = require('sweetalert2')
     const { addItem, isInCart, updateItem, precioTotal, productCartList } = useContext(CartContext)
     const { nombre, codigo, precio, id, uno, dos, panel, sonido, procesador, tres } = item
 
@@ -25,10 +26,42 @@ const ItemDetail = ({ item, loading }) => {
         else if (isInCart(item.id)) {
             updateItem(item, numero)
             precioTotal(productCartList)
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-start',
+                showConfirmButton: false,
+                timer: 1500,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+
+            Toast.fire({
+                icon: 'success',
+                title: 'Producto agregado al carrito'
+            })
         }
         else {
             addItem(item, numero)
             precioTotal(productCartList)
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-start',
+                showConfirmButton: false,
+                timer: 1500,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+
+            Toast.fire({
+                icon: 'success',
+                title: 'Producto agregado al carrito'
+            })
         }
     }
 
