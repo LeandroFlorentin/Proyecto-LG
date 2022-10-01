@@ -1,12 +1,13 @@
 .containDetail {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .imgDetailContain {
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 10vw;
 }
 
 .imgDetail {
@@ -21,20 +22,21 @@
 }
 
 .imgBigDetailContain {
-    width: 700px;
+    width: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: auto;
     margin-top: 20px
 }
 
 .imgBigDetail {
-    width: 700px;
+    width: 50vw;
     height: 450px;
 }
 
 .containDetallesDetail {
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +95,7 @@
     border-radius: 50px;
     border: none;
     color: #fff;
-    width: 300px;
+    width: 20vw;
     transition: background-color 1s, border-radius 250ms;
 }
 
@@ -108,4 +110,65 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:1024px) {
+    .nombreDetail {
+        font-size: 17px;
+    }
+
+    .codigoDetail {
+        font-size: 10px;
+    }
+
+    .liDetail {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .imgBigDetailContain {
+        width: 70vw;
+    }
+
+    .imgBigDetail {
+        width: 60vw;
+    }
+
+    .imgDetailContain {
+        display: none;
+    }
+
+    .containDetallesDetail {
+        width: 30vw;
+    }
+}
+
+@media (max-width:425px) {
+    .containDetail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .imgBigDetailContain {
+        width: 100vw;
+    }
+
+    .imgBigDetail {
+        width: 100vw;
+    }
+
+    .containDetallesDetail {
+        width: 90vw;
+    }
+
+    .nombreCodigoDetail {
+        margin-left: 22px;
+    }
+
+    .botonDetail {
+        width: 70vw;
+    }
 }
