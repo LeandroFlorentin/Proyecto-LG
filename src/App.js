@@ -9,6 +9,7 @@ import Inicio from './components/Inicio/Inicio.js'
 import Soporte from './components/Soporte/Soporte.js'
 import IniciarSesion from './components/IniciarSesion/IniciarSesion';
 import { CartProvider } from './context/CartContext.js'
+import FormBuy from './components/FormBuy/FormBuy.js';
 
 function App() {
   let televisor = 'televisor';
@@ -41,6 +42,9 @@ function App() {
               </Route>
               <Route exact path='/iniciar'>
                 <IniciarSesion />
+              </Route>
+              <Route exact path='/compra'>
+                <FormBuy />
               </Route>
             </Switch>
           </header>

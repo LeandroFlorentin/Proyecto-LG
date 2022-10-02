@@ -42,16 +42,17 @@
 .inputSubmit {
     width: 100px;
     height: 30px;
-    border-radius: 5px;
-    border: 1px solid #aaa;
+    border-radius: 50px;
+    border: none;
     background-color: #880021;
     color: #fff;
-    transition: 1s all;
+    cursor: pointer;
+    transition: 250ms border-radius, 1s background-color;
 }
 
 .inputSubmit:hover {
-    cursor: pointer;
     background-color: #bb1152;
+    border-radius: 5px;
 }
 
 @media (max-width:768px) {

@@ -46,16 +46,17 @@
 .botonIniciar {
     width: 60%;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 50px;
     border: none;
     color: #fff;
     background-color: #880021;
     cursor: pointer;
-    transition: 1s all;
+    transition: 250ms border-radius, 1s background-color;
 }
 
 .botonIniciar:hover {
     background-color: #bb1152;
+    border-radius: 5px;
 }
 
 .pIniciar {
