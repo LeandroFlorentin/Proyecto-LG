@@ -7,14 +7,7 @@ export const CartContext = React.createContext();
 export const CartProvider = ({ children }) => {
     const Swal = require('sweetalert2')
 
-    const precioTotal = (productCartList) => {
-        let precioTotally = 0;
-        for (let i = 0; i < productCartList.length; i++) {
-            console.log(typeof productCartList[i].cantidad)
-            precioTotally += productCartList[i].precio * productCartList[i].cantidad;
-        }
-        return precioTotally;
-    }
+    const precioTotal = (productCartList) => productCartList.reduce((acc, next) => acc + (next.precio * next.cantidad), 0)
 
     const [productCartList, setProductCartList] = useState([])
 
@@ -45,7 +38,7 @@ export const CartProvider = ({ children }) => {
         })
 
         Toast.fire({
-            icon: 'error',
+            icon: 'success',
             title: 'Producto eliminado correctamente'
         })
     }

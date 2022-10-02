@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { CartContext } from '../../context/CartContext';
-import Carrito from "../Carrito/Carrito.js";
+import Carrito from "../CartWidget/CartWidget";
 
 const CarritoContainer = () => {
     const { productCartList, removeItem, clearCarrito, precioTotal } = useContext(CartContext)

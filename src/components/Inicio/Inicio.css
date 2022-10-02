@@ -192,6 +192,7 @@
 }
 
 @media (max-width:425px) {
+
     .imgSmallContainer {
         height: 500px;
         display: flex;

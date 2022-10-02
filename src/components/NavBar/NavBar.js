@@ -3,7 +3,7 @@ import logito from '../../img/cosito/lg-thinkq-logo.svg';
 import logito2 from '../../img/cosito/usuario.png'
 import './NavBar.css';
 import { NavLink, Link } from 'react-router-dom';
-import CarritoContainer from '../CarritoContainer/CarritoContainer.js'
+import CartWidgetContainer from '../CartWidgetContainer/CartWidgetContainer.js'
 
 const NavBar = () => {
     return (
@@ -17,10 +17,11 @@ const NavBar = () => {
                     <div className='contenedorSpan'>
                         <NavLink className={(isActive) => isActive ? 'link' : 'linkoff'} exact to='/' ><span><strong>INICIO</strong></span></NavLink>
                         <NavLink className={(isActive) => isActive ? 'link' : 'linkoff'} to='/tienda' ><span><strong>TIENDA</strong></span></NavLink>
-                        <NavLink className={(isActive) => isActive ? 'link' : 'linkoff'} to='/soporte' ><span><strong>SOPORTE</strong></span></NavLink >
+                        <NavLink className={(isActive) => isActive ? 'link' : 'linkoff'} to='/soporte' ><span><strong>SOPORTE</strong></span></NavLink>
+                        <NavLink className={(isActive) => isActive ? 'link' : 'linkoff'} to='/compra' ><span><strong>COMPRA</strong></span></NavLink>
                     </div >
                     <div className='divButton'>
-                        <CarritoContainer />
+                        <CartWidgetContainer />
                         <Link to='/iniciar'><img className='user' src={logito2} alt='USER' /></Link>
                     </div>
                 </nav >

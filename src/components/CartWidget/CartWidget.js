@@ -5,7 +5,6 @@ import { collection, addDoc } from 'firebase/firestore'
 import { useState } from 'react';
 
 const Carrito = ({ openModal, showModal, stopPropa, productCartList, removeItem, clearCarrito, precioTotal }) => {
-
     const [idOrder, setIdOrder] = useState('');
 
     const enviar = (e) => {

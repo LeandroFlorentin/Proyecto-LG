@@ -52,10 +52,11 @@
 
 .containSpan {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 25px;
-    padding-right: 300px;
     font-size: 13px;
+    width: 100%;
 }
 
 .containSpan span {
@@ -81,6 +82,10 @@
 }
 
 @media (max-width: 768px) {
+    .containerLgImg {
+        padding: 10px;
+    }
+
     .containSpan {
         padding-right: 10px;
     }
@@ -104,21 +109,44 @@
 }
 
 @media (max-width: 425px) {
+
+    .miniContainer p {
+        font-size: 12px;
+    }
+
+    .tituloFooter p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .containTexto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containTexto p {
+        width: 90%;
+        font-size: 12px;
+    }
+
     .containSpan {
         display: flex;
         flex-direction: row;
-        padding: 10px 0px;
+        width: 90%;
     }
 
     .containSpan span {
-        padding: 10px 5px;
-        font-size: 10px;
-        margin-right: 10px;
+        padding: 10px 0px;
+        font-size: 12px;
+        margin-right: 0px;
     }
 
     .finalPie {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .containerImg {
