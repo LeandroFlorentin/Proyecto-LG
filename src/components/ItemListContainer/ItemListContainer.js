@@ -7,8 +7,8 @@ import Cargando from '../Cargando/Cargando.js'
 
 const ItemListContainer = () => {
     const [filtro, setFiltro] = useState('')
-    const [loading, setLoading] = useState(true)
     const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true)
     const { getData } = useContext(CartContext)
     useEffect(() => {
         getData(filtro)
@@ -17,7 +17,7 @@ const ItemListContainer = () => {
                 setLoading(false)
             })
     }, [filtro])
-
+    console.log(loading)
     const cambiar = (descrip) => {
         setFiltro(descrip)
     }

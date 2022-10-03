@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+Hola, bienvenido a mi proyecto, este proyecto es un ecommerce de televisores LG.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+INTRODUCCION
 
-## Available Scripts
+Este proyecto consta de cuatro rutas principales, las cuales son, Inicio, Tienda, Soporte, Compra, IniciarSesion, en esta ocasión solo profundizaremos en el apartado de tienda, compra y veremos el funcionamiento del carrito.
 
-In the project directory, you can run:
+TIENDA
 
-### `npm start`
+Al ingresar al apartado de tienda veras a la izquierda los tipos de modelos y a la derecha los televisores disponibles para la compra, en caso de clickear en algun tipo de modelo se filtrata en los productos solo los televisores de ese modelo, una vez filtrado si toca el boton sacar filtros, se volveran a mostrar todos los televisores.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+DETALLE DEL PRODUCTO
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Una vez ingresado al producto tocando el boton "ver mas" o la imagen del producto podras ver los detalles del producto, en este apartado tendras una botonera donde podras ingresr la cantidad del producto a comprar, al tocar agregar al carrito se agregara un producto al carrito y podras visualizarlo tocando en el carrito de la parte superior izquierda, tendra un numero que representara la cantidad de productos ingresados (Por cada tipo de modelo de televisor).
 
-### `npm test`
+CARRITO
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ingresando al carrito podras ver el producto que agregaste, la cantidad y el precio y abajo de todo tendra el precio total, tendras dos botones el de eliminar que elimina especificamente ese producto y el boton de vaciar carrito que elimina todo el carrito completo.
 
-### `npm run build`
+COMPRA
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Una vez ya elegidos los productos para comprar iremos al apartado de compra, en este apartado con pedira que ingresemos un nombre (Campo obligatorio), un email (campo obligatorio y que tambien cuenta con verificacion de que lo ingresado sea un email, solo toma emails sin mayusuculas al comienzo) y un numero telefonico, al ingresar todo y hacer la compra (se requiere al menos tener 1 producto en el carrito), nos mostrara una tarjetita en donde nos detallara los datos de nuestra compra.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
