@@ -10,7 +10,7 @@ Al ingresar al apartado de tienda veras a la izquierda los tipos de modelos y a 
 
 DETALLE DEL PRODUCTO
 
-Una vez ingresado al producto tocando el boton "ver mas" o la imagen del producto podras ver los detalles del producto, en este apartado tendras una botonera donde podras ingresr la cantidad del producto a comprar, al tocar agregar al carrito se agregara un producto al carrito y podras visualizarlo tocando en el carrito de la parte superior izquierda, tendra un numero que representara la cantidad de productos ingresados (Por cada tipo de modelo de televisor).
+Una vez ingresado al producto tocando el boton "ver mas" o la imagen del producto podras ver los detalles del producto, en este apartado tendras una botonera donde podras ingresar la cantidad del producto a comprar, al tocar agregar al carrito se agregara un producto al carrito y podras visualizarlo tocando en el carrito de la parte superior izquierda, tendra un numero que representara la cantidad de productos ingresados (Por cada tipo de modelo de televisor).
 
 CARRITO
 
@@ -18,5 +18,5 @@ Ingresando al carrito podras ver el producto que agregaste, la cantidad y el pre
 
 COMPRA
 
-Una vez ya elegidos los productos para comprar iremos al apartado de compra, en este apartado con pedira que ingresemos un nombre (Campo obligatorio), un email (campo obligatorio y que tambien cuenta con verificacion de que lo ingresado sea un email, solo toma emails sin mayusuculas al comienzo) y un numero telefonico, al ingresar todo y hacer la compra (se requiere al menos tener 1 producto en el carrito), nos mostrara una tarjetita en donde nos detallara los datos de nuestra compra.
+Una vez ya elegidos los productos para comprar iremos al apartado de compra, en este apartado nos pedira que ingresemos un nombre (Campo obligatorio), un email (campo obligatorio y que tambien cuenta con verificacion de que lo ingresado sea un email, solo toma emails sin mayusuculas al comienzo) y un numero telefonico, al ingresar todo y hacer la compra (se requiere al menos tener 1 producto en el carrito), nos mostrara una tarjeta en donde nos detallara los datos de nuestra compra.
 
