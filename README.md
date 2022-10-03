@@ -1,5 +1,7 @@
 Hola, bienvenido a mi proyecto, este proyecto es un ecommerce de televisores LG.
 
+Video de la navegabilidad: https://reccloud.com/es/u/pv5m3cr
+
 INTRODUCCION
 
 Este proyecto consta de cuatro rutas principales, las cuales son, Inicio, Tienda, Soporte, Compra, IniciarSesion, en esta ocasión solo profundizaremos en el apartado de tienda, compra y veremos el funcionamiento del carrito.
