@@ -3,9 +3,9 @@ import { useContext, useState } from 'react';
 import Count from '../Count/Count.js';
 import { CartContext } from '../../context/CartContext';
 import Cargando from '../Cargando/Cargando.js'
+import Notiflix from 'notiflix';
 
 const ItemDetail = ({ item, loading }) => {
-    const Swal = require('sweetalert2')
     const { addItem, isInCart, updateItem, precioTotal, productCartList } = useContext(CartContext)
     const { nombre, codigo, precio, id, uno, dos, panel, sonido, procesador, tres } = item
 
@@ -22,46 +22,16 @@ const ItemDetail = ({ item, loading }) => {
 
     const agregado = (e) => {
         e.preventDefault()
-        if (numero < 1) console.log("la cantidad debe ser mayor a 0")
+        if (numero < 1) Notiflix.Notify.failure('Este producto ya esta en el carrito.');
         else if (isInCart(item.id)) {
             updateItem(item, numero)
             precioTotal(productCartList)
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-start',
-                showConfirmButton: false,
-                timer: 1500,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                }
-            })
-
-            Toast.fire({
-                icon: 'success',
-                title: 'Producto agregado al carrito'
-            })
+            Notiflix.Notify.success('Producto agregado con exito.');
         }
         else {
             addItem(item, numero)
             precioTotal(productCartList)
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-start',
-                showConfirmButton: false,
-                timer: 1500,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                }
-            })
-
-            Toast.fire({
-                icon: 'success',
-                title: 'Producto agregado al carrito'
-            })
+            Notiflix.Notify.success('Producto agregado con exito.');
         }
     }
 

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import db from '../utils/firebase.js'
 import { collection, getDocs, query, where } from 'firebase/firestore'
+import Notiflix from 'notiflix';
 
 export const CartContext = React.createContext();
 
 export const CartProvider = ({ children }) => {
-    const Swal = require('sweetalert2')
 
     const precioTotal = (productCartList) => productCartList.reduce((acc, next) => acc + (next.precio * next.cantidad), 0)
 
@@ -25,42 +25,12 @@ export const CartProvider = ({ children }) => {
 
     const removeItem = (id) => {
         setProductCartList(productCartList.filter(produc => produc.id !== id))
-        const Toast = Swal.mixin({
-            toast: true,
-            position: 'top-start',
-            showConfirmButton: false,
-            timer: 1500,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-        })
-
-        Toast.fire({
-            icon: 'success',
-            title: 'Producto eliminado correctamente'
-        })
+        Notiflix.Notify.success('Producto eliminado con exito.');
     }
 
     const clearCarrito = () => {
         setProductCartList([])
-        const Toast = Swal.mixin({
-            toast: true,
-            position: 'top-start',
-            showConfirmButton: false,
-            timer: 1500,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-        })
-
-        Toast.fire({
-            icon: 'error',
-            title: 'Carrito vaciado con exito'
-        })
+        Notiflix.Notify.success('Carrito vaciado con exito.');
     }
 
     const isInCart = (id) => {
