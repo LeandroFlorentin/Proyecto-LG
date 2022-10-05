@@ -1,6 +1,12 @@
 Hola, bienvenido a mi proyecto, este proyecto es un ecommerce de televisores LG.
 
 Video de la navegabilidad: https://reccloud.com/es/u/pv5m3cr
+<<<<<<< HEAD
+=======
+Deploy del proyecto: https://proyecto-lg-ce75.vercel.app/
+
+Tecnologias utilizadas: React.js, Javascript, CSS3, HTML5.
+>>>>>>> 41d3439cad6dc7247db024f1d3170e8e762c47ce
 
 INTRODUCCION
 
@@ -20,5 +26,9 @@ Ingresando al carrito podras ver el producto que agregaste, la cantidad y el pre
 
 COMPRA
 
+<<<<<<< HEAD
 Una vez ya elegidos los productos para comprar iremos al apartado de compra, en este apartado nos pedira que ingresemos un nombre (Campo obligatorio), un email (campo obligatorio y que tambien cuenta con verificacion de que lo ingresado sea un email, solo toma emails sin mayusuculas al comienzo) y un numero telefonico, al ingresar todo y hacer la compra (se requiere al menos tener 1 producto en el carrito), nos mostrara una tarjetita en donde nos detallara los datos de nuestra compra.
+=======
+Una vez ya elegidos los productos para comprar iremos al apartado de compra, en este apartado nos pedira que ingresemos un nombre (Campo obligatorio), un email (campo obligatorio y que tambien cuenta con verificacion de que lo ingresado sea un email, solo toma emails sin mayusuculas al comienzo) y un numero telefonico, al ingresar todo y hacer la compra (se requiere al menos tener 1 producto en el carrito), nos mostrara una tarjeta en donde nos detallara los datos de nuestra compra.
+>>>>>>> 41d3439cad6dc7247db024f1d3170e8e762c47ce
 
