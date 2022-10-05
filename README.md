@@ -1,6 +1,9 @@
 Hola, bienvenido a mi proyecto, este proyecto es un ecommerce de televisores LG.
 
 Video de la navegabilidad: https://reccloud.com/es/u/pv5m3cr
+Deploy del proyecto: https://proyecto-lg-ce75.vercel.app/
+
+Tecnologias utilizadas: React.js, Javascript, CSS3, HTML5.
 
 INTRODUCCION
 
