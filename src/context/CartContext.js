@@ -7,7 +7,7 @@ export const CartContext = React.createContext();
 
 export const CartProvider = ({ children }) => {
 
-    const precioTotal = (productCartList) => productCartList.reduce((acc, next) => acc + (next.precio * next.cantidad), 0)
+    const precioTotal = (productCartList) => productCartList.reduce((acc, next) => acc + (next.precio + next.cantidad), 0)
 
     const [productCartList, setProductCartList] = useState([])
 
