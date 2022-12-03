@@ -3,6 +3,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .containerBuscador {
